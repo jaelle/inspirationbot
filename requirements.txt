@@ -1,0 +1,4 @@
+flask-ngrok
+tensorflow 
+transformers 
+torch
