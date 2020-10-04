@@ -2,3 +2,5 @@ flask-ngrok
 tensorflow 
 transformers 
 torch
+pandas
+sklearn
