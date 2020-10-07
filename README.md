@@ -1,4 +1,4 @@
-# inspirationbot
+# InspirationBot
 Learn how to finetune your own GPT2 language model and use it to generate text suggestions.
 
 ### Try it out on Colab:
