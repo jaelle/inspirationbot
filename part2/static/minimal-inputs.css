@@ -40,11 +40,10 @@ input, input[type="text"], input[type="password"], input[type="email"], input[ty
   color: #555;
   outline: none;
   padding: 0 0.75em;
-  font-weight: bold;
 }
 
 textarea {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
