@@ -7,9 +7,20 @@
         <h1>InspirationBot</h1>
         <form action="#" method="GET">
             <textarea style="width:600px;height:100px" name="prompt">{{prompt}}</textarea><br />
-        <input type="submit" />
+        <input type="submit" value="Generate from Prompt" />
 
-        {{generated_string}}
+        <div align="left">
+            <textarea id="sequence0" style="width:600px;border:1px solid #CCC;height:100px"> {{generated_sequence0}} </textarea>
+            <button onclick="copyText(sequence0)">Copy Text</button>
+            <br /><br />
+            <textarea id="sequence1" style="width:600px;border:1px solid #CCC;height:100px"> {{generated_sequence1}} </textarea>
+            <button onclick="copyText(sequence1)">Copy Text</button>
+            <br /><br />
+            <textarea id="sequence2" style="width:600px;border:1px solid #CCC;height:100px"> {{generated_sequence2}} </textarea>
+            <button onclick="copyText(sequence2)">Copy Text</button>
+            <br /><br />
+        
+        </div>
 
         </form>
     </body>
