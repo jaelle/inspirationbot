@@ -1,10 +1,9 @@
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
-import torch
-import torch.nn.functional as F
-import numpy as np
+from torch import device
+from torch.cuda import is_available
 
 def generate(prompt_text,length=64,temperature=1.0,top_k=0,top_p=0.9,num_return_sequences=1):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = device("cuda" if is_available() else "cpu")
     local_dir = '/content/inspirationbot/output/'
     tokenizer = GPT2Tokenizer.from_pretrained(local_dir)
     model = GPT2LMHeadModel.from_pretrained(local_dir)
