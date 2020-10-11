@@ -8,19 +8,41 @@
     <body>
         <h1>InspirationBot</h1>
         <form action="#" method="GET">
+            1. choose a genre: 
+            <select name="genre">
+                <option value="fiction">Choose One</option>
+                <option value="historical_fiction">Historical Fiction</option>
+                <option value="fiction">Fiction</option>
+                <option value="speculative_fiction">Speculative Fiction</option>
+                <option value="childrens_literature">Children's Literature</option>
+                <option value="suspense">Suspense</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="science_fiction">Science Fiction</option>
+                <option value="young_adult_literature">Young Adult Literature</option>
+                <option value="crime_fiction">Crime Fiction</option>
+                <option value="horror">Horror</option>
+                <option value="romance_novel">Romance Novel</option>
+                <option value="thriller">Thriller</option>
+            </select>
+
+            <br />
+            2. enter a prompt:<br />
             <textarea style="width:600px;height:100px" name="prompt">{{prompt}}</textarea><br />
             <input type="submit" value="Generate from Prompt" />
 
         </form>
 
+        <h3>genre: {{genre}}</h3>
+
         <div align="left">
-            <a href="#" onclick="copyText('sequence0')">Copy text</a><br />
+            <a href="#" onclick="copyText('sequence0')">Copy text</a><br /> 
             <textarea id="sequence0" style="width:600px;border:1px solid #CCC;height:100px">{{generated_sequence0}} </textarea>
             <br /><br />
-            <a href="#" onclick="copyText('sequence0')">Copy text</a><br />
+            <a href="#" onclick="copyText('sequence1')">Copy text</a><br />
             <textarea id="sequence1" style="width:600px;border:1px solid #CCC;height:100px">{{generated_sequence1}} </textarea>
             <br /><br />
-            <a href="#" onclick="copyText('sequence0')">Copy text</a><br />
+            <a href="#" onclick="copyText('sequence2')">Copy text</a><br />
             <textarea id="sequence2" style="width:600px;border:1px solid #CCC;height:100px">{{generated_sequence2}} </textarea>
             <br /><br />
         
